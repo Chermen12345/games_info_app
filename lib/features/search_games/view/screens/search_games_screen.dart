@@ -15,7 +15,8 @@ class SearchMoviesScreen extends StatefulWidget {
   State<SearchMoviesScreen> createState() => _SearchMoviesScreenState();
 }
 
-class _SearchMoviesScreenState extends State<SearchMoviesScreen> {
+class _SearchMoviesScreenState extends State<SearchMoviesScreen>
+    with AutomaticKeepAliveClientMixin {
   bool isWebOrDesktop(BuildContext context) =>
       MediaQuery.of(context).size.width >= 600;
   @override
@@ -152,4 +153,8 @@ class _SearchMoviesScreenState extends State<SearchMoviesScreen> {
             ),
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }

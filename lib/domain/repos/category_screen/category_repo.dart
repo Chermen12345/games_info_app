@@ -6,7 +6,7 @@ import 'package:movie_app/domain/repos/category_screen/abstract_category_repo.da
 
 import 'package:movie_app/domain/repos/home_screen/abstract_home_list_repo.dart';
 
-import 'package:movie_app/utils/consts/consts.dart';
+import 'package:movie_app/core/consts/consts.dart';
 
 class CategoryRepo implements AbstractCategoryRepo {
   @override

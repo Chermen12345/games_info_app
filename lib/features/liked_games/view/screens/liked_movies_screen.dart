@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:movie_app/features/home_list/bloc/game_list.bloc.dart';
+
 import 'package:movie_app/features/liked_games/bloc/saved_bloc.dart';
 import 'package:movie_app/features/liked_games/bloc/saved_event.dart';
 import 'package:movie_app/features/liked_games/bloc/saved_state.dart';
@@ -16,8 +16,7 @@ class LikedGamesScreen extends StatefulWidget {
   State<LikedGamesScreen> createState() => _MovieListScreenState();
 }
 
-class _MovieListScreenState extends State<LikedGamesScreen>
-    with AutomaticKeepAliveClientMixin {
+class _MovieListScreenState extends State<LikedGamesScreen> {
   @override
   void initState() {
     // TODO: implement initState
@@ -54,8 +53,4 @@ class _MovieListScreenState extends State<LikedGamesScreen>
       ),
     );
   }
-
-  @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;
 }

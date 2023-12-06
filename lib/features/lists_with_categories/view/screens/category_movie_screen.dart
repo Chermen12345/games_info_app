@@ -17,7 +17,8 @@ class CategoryMovieScreen extends StatefulWidget {
   State<CategoryMovieScreen> createState() => _CategoryMovieScreenState();
 }
 
-class _CategoryMovieScreenState extends State<CategoryMovieScreen> {
+class _CategoryMovieScreenState extends State<CategoryMovieScreen>
+    with AutomaticKeepAliveClientMixin {
   @override
   void initState() {
     // TODO: implement initState
@@ -31,4 +32,8 @@ class _CategoryMovieScreenState extends State<CategoryMovieScreen> {
       children: [XboxOneList(), Xbox360List(), PCList(), NinSwitchList()],
     ));
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }

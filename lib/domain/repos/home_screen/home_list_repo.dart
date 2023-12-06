@@ -1,11 +1,9 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:movie_app/domain/models/game.dart';
 
 import 'package:movie_app/domain/repos/home_screen/abstract_home_list_repo.dart';
 
-import 'package:movie_app/utils/consts/consts.dart';
+import 'package:movie_app/core/consts/consts.dart';
 
 class HomeListRepo implements AbstractHomeListRepo {
   @override

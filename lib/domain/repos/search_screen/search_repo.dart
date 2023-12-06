@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:movie_app/domain/models/game.dart';
 import 'package:movie_app/domain/repos/search_screen/abstract_search_repo.dart';
-import 'package:movie_app/utils/consts/consts.dart';
+import 'package:movie_app/core/consts/consts.dart';
 
 class SearchRepo implements AbstractSearchRepo {
   @override
